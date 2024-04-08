@@ -1,0 +1,14 @@
+Common git commands  -->
+
+1. For cloning repository into local system
+
+git clone "repository https url"
+
+2. To save git commits -->
+
+git config --global user.email "nehaprasad.kvs@gmail.com"
+git conig --global user.name "nehaprasad22"
+
+3. Creating Directory -->
+
+mkdir Sample_folder
