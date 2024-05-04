@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container"></div>
+ 
+<h1>Choose the Color!!</h1>
+<div class="button-container">
+    <button id="yellow">Yellow</button>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+</div>
+</body>
+<script>
+
+var colors = ["yellow", "red", "blue", "green"];
+    var container = document.querySelector(".container");
+
+    for (var i = 0; i < colors.length; i++) {
+        var button = document.getElementById(colors[i]);
+        button.addEventListener("click", function() {
+            container.style.backgroundColor = this.id;
+        });
+    }
+</script>
+</html>
